@@ -154,12 +154,12 @@ In this Project I will be cleaning the [Nashville Houseing Data](https://github.
     SELECT *,
     ROW_NUMBER() OVER(
     PARTITION BY ParcelID,
-             PropertyAddress,
-			       SalePrice,
-			       SaleDate,
-			       LegalReference
-			       ORDER BY UniqueID
-			               ) AS Row_num
+                 PropertyAddress,
+	         SalePrice,
+		 SaleDate,
+		 LegalReference
+		 ORDER BY UniqueID
+		      ) AS Row_num
     
     FROM Table1
                      )
